@@ -1,1 +1,81 @@
+/*------------------------------------------------------------------------
+# Palettes
+------------------------------------------------------------------------*/
+.palette-primary {
+	background-color: $palette-primary-neutral-color;
+	color: $text-contrast-palette-primary-neutral-color;
+	a {
+		color: $palette-primary_1;
+		&:hover {
+			color: lighten( $palette-primary_1, 10% );
+		}
+	}
+	.site-title {
+		a {
+			color: $palette-primary_2;
+		}
+	}
+	.menu-words {
+		color: $palette-primary_2
+	}
+	.starter-triangle path {
+		fill: darken($palette-primary_1, 20%);
+		stroke: darken($palette-primary_1, 20%);
+		stroke-width: 2;
+	}
+	@media only screen and ( max-width : 768px ) {
+		.navbar-default .navbar-collapse {
+			background: darken($palette-primary_1, 20%);
+		}
+	}
+	.social-menu {
+		li {
+			background: lighten( $palette-primary_1, 15% );
+			a {
+				color: $text-contrast-palette-primary_1;
+			}
+			&:hover {
+				background: $palette-primary_1;
+			}
+			&:nth-child(3n+1) {
+				background: lighten( $palette-primary_2, 15% );
+				a {
+					color: $text-contrast-palette-primary_2;
+				}
+				&:hover {
+					background: $palette-primary_2;
+				}
+			}
+			&:nth-child(3n+2) {
+				background: lighten( $palette-primary_3, 15% );
+				a {
+					color: $text-contrast-palette-primary_3;
+				}
+				&:hover {
+					background: $palette-primary_3;
+				}
+			}
+		}
+	}
+	.continue-reading {
+		color: darken($palette-primary_1, 20%);
+	}
+	.entry-footer {
+		.fa-pencil,
+		.post-edit-link {
+			color: $text-contrast-palette-primary_1;
+		}
+	}
+
+	.site-footer {
+		color: $text-contrast-palette-primary_1;
+		background: darken($palette-primary_1, 20%);
+		a {
+			color: $palette-primary_2;
+			&:hover, &:focus {
+				color: lighten( $palette-primary_2, 10% );
+			}
+		}
+	}
+}
 
