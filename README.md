@@ -1,8 +1,6 @@
 # IMWGo
 
-# Project Title
-
-One Paragraph of project description goes here
+BoldGrid child theme of [Prime](https://github.com/BoldGrid/prime/releases) - The web framework used
 
 ## Getting Started
 
